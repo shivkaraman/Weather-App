@@ -1,0 +1,109 @@
+:root{
+    --text-clr: rgb(125, 132, 139);
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+
+h1,
+.search-bar>label,
+.card--footer{
+    color: var(--text-clr);
+}
+
+.search-bar, 
+.card{
+    width: 100%;
+}
+
+.d-none{
+    display: none !important;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    max-width: 40rem;   
+    margin: 2rem auto;    
+}
+
+h1{
+    font-size: 3.25rem;
+    letter-spacing: 0.1em;
+    padding: 0.25em 0;
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar>label{
+    font-size: 1.5rem;
+    letter-spacing: 0.075em;
+    margin-top: 0.3em;
+}
+
+.search-bar>input{
+    width: 100%;
+    border: 1px solid rgb(125, 132, 139);
+    border-radius: 0.25rem;
+    padding: 0.75em 1em;
+    margin: 0.7em 1.5rem;
+}
+
+.card{
+    box-shadow:  15px 25px 45px rgba(0, 0, 0, 0.25);
+    /* margin-top: 1em; */
+}
+
+.time>img{
+    width: 100%;
+    max-height: 40rem;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    margin: -1.75rem;
+}
+
+.icon>img{
+   position: relative;
+   background-color: rgb(244, 239, 239);
+   top: -3rem;
+   border-radius: 50%;
+}
+.card--footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card--footer>h3{
+    font-size: 2.8rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    padding: 0.3em 0;
+}
+
+.card--footer p.condition{
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+}
+
+.card--footer p.temp{
+    font-size: 3.5rem;
+    padding-top: 0.7em;
+    padding-bottom: 1em;
+}

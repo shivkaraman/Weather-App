@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather Application</title>
+</head>
+<body>
+    <main>
+        <h1>Ninja Weather</h1>
+        <form class="search-bar">
+            <label for="">Enter a location for weather information</label>
+            <input type="text" name="city">
+        </form>
+        <div class="card d-none">
+            <div class="time">
+                <img src="https://via.placeholder.com/400x300" alt="">
+            </div>
+            <div class="icon">
+                <img src="" class="icon">
+            </div>
+            <div class="card--footer">
+                <h3>City Name</h>
+                <p class="condition">Weather condition</p>
+                <p class="temp">Temp in &deg;C</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
