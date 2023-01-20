@@ -1,4 +1,4 @@
-const key = 'AiKdk5ElA2Cz5wfjkh9SzQNfchEULBjf';
+const key = 'mYYvSGnX29129lF5GQ49UUiNnScIErWc';
 
 //Get weathere information
 const getWeather = async cityCode => {
@@ -8,7 +8,6 @@ const getWeather = async cityCode => {
 
     const response = await fetch(baseUrl + query);//Gives a list of cities with closest match for given input, 0th obj is  closest match
     const data = await response.json();
-
     return data[0];
 };
 
@@ -20,7 +19,6 @@ const getCity = async city => {
 
     const response = await fetch(baseUrl + query);//Gives a list of cities with closest match for given input, 0th obj is  closest match
     const data = await response.json();
-
     return data[0];
 }
 
